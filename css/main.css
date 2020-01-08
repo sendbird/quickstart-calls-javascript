@@ -1,0 +1,330 @@
+@import 'global.css';
+
+.logo-oval {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--white);
+    background-image: url("../img/ic-logo-inverse-01.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 16px;
+}
+
+.dial-view {
+    box-sizing: border-box;
+    width: 100vw;
+    max-width: 500px;
+    padding: 24px;
+}
+
+.login-view {
+    box-sizing: border-box;
+    width: 100vw;
+    max-width: 500px;
+    padding: 24px;
+}
+
+.login-title-div {
+    margin-bottom: 40px;
+}
+
+.login-button {
+    margin-bottom: 23px;
+    margin-left: calc(100% - 80px);
+    margin-right: 0;
+}
+
+.ic-logo-horizontal-purple-300 {
+    display: block;
+    width: 180px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 32px;
+}
+
+.form-container {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+    border: solid 1px #dee2f2;
+    background-color: var(--white);
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.field {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    border-radius: 4px;
+    border: solid 1px var(--navy-200);
+    background-color: var(--white);
+    margin-left: -1px;
+    margin-bottom: 22px;
+
+    font-family: Avenir Next;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: var(--navy-900);
+}
+
+hr {
+    width: calc(100% + 96px);
+    height: 1px;
+    border: 0;
+    border-top: 1px solid var(--navy-100);
+    margin-left: -48px;
+    margin-top: 10px;
+    margin-bottom: 23px;
+}
+
+.logout-button {
+    margin-bottom: 23px;
+    margin-left: 10px;
+}
+
+.dial-button {
+    margin-bottom: 23px;
+    margin-left: 10px;
+}
+
+.remote-profile {
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-bottom: 24px;
+}
+
+.peer-name {
+    margin-bottom: 4px;
+}
+
+.connection-info {
+    margin-bottom: 24px;
+}
+
+.peer-state-div {
+    align-items: center;
+    margin-bottom: 97px;
+}
+
+.peer-state-div-invisible {
+    visibility: hidden;
+    margin-bottom: 97px;
+}
+
+.peer-mute-icon {
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/ic-callkit-audio-off-white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 8px;
+}
+
+.peer-mute-label {
+    display: block;
+    font-family: Avenir Next;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--white);
+}
+
+.btn-accept {
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 8px;
+    background-color: var(--green-300);
+    background-image: url("../img/ic-callkit-audio.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-call {
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 8px;
+}
+
+.btn-mute {
+    background-color: var(--mute-gray);
+    background-image: url("../img/ic-callkit-audio-off-white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-unmute {
+    background-color: var(--white);
+    background-image: url("../img/ic-callkit-audio-off-black.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-end {
+    background-color: var(--red-300);
+    background-image: url("../img/ic-callkit-end.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-decline {
+    background-color: var(--red-300);
+    background-image: url("../img/ic-callkit-decline.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-close {
+    width: 248px;
+    height: 64px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 28px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.btn-close:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.28);
+}
+
+.ic-logo-horizontal-purple-300 {
+    display: block;
+    width: 180px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 24px;
+}
+
+.voice-sample-page {
+    height: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.voice-sample-desc {
+    width: 280px;
+    height: 40px;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.ic-arrow-down-right-24 {
+    display: block;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.widget-tooltip {
+    position: absolute;
+    right: 24px;
+    bottom: 88px;
+    width: 296px;
+    height: 124px;
+    border-radius: 4px;
+}
+
+.smile-face {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    width: 40px;
+    height: 40px;
+    font-family: AppleColorEmoji;
+    font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: var(--white);
+}
+
+.img-tooltip-tail-down {
+    position: absolute;
+    right: 16px;
+    bottom: -8px;
+    width: 12px;
+    height: 8px;
+    object-fit: contain;
+}
+
+.widget-open-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    width: 56px;
+    height: 56px;
+    border-radius: 32px;
+    background-color: var(--purple-300);
+    background-image: url("../img/ic-call-logs-filled.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.widget-close-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    width: 56px;
+    height: 56px;
+    border-radius: 32px;
+    background-color: var(--purple-300);
+    background-image: url("../img/ic-close-24.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.widget-div {
+    position: absolute;
+    right: 24px;
+    bottom: 88px;
+    width: 376px;
+    height: 592px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 9px 15px -7px rgba(33, 34, 66, 0.04), 0 9px 46px 8px rgba(33, 34, 66, 0.08), 0 24px 38px 3px rgba(33, 34, 66, 0.12);
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.widget-div-hidden {
+    display: none;
+}
+
+
+.widget-header {
+    height: 80px;
+    background-color: var(--purple-300);
+}
+
+.ic-logo-purple-300 {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin-top: 28px;
+    margin-left: 24px;
+}
+
+.widget-form-container {
+    box-sizing: border-box;
+    padding-left: 24px;
+    padding-right: 24px;
+}
