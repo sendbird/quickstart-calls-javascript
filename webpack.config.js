@@ -5,14 +5,13 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    main: ['./js/scripts/main.js'],
-    widget: ['./js/scripts/widget.js'],
-    index: ['./js/scripts/index.js']
+    main: ['./js/main.js'],
+    widget: ['./js/widget.js'],
+    index: ['./js/index.js']
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].min.js',
-    publicPath: '/'
   },
   devtool: 'source-map',
   devServer: {
@@ -41,7 +40,7 @@ module.exports = {
       {
         test: /\.js/i,
         exclude: /(node_modules)/,
-        loader: 'babel-loader',
+        use: 'babel-loader',
       },
       {
         test: /\.css$/i,
@@ -53,7 +52,7 @@ module.exports = {
             },
           },
           'css-loader'
-        ],
+        ]
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
@@ -63,8 +62,8 @@ module.exports = {
             options: {
               esModule: false
             }
-          },
-        ],
+          }
+        ]
       }
     ]
   },

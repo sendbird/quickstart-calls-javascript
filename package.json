@@ -25,13 +25,16 @@
     "mini-css-extract-plugin": "^0.9.0",
     "regenerator-runtime": "^0.13.3",
     "style-loader": "^1.1.2",
+    "url-loader": "^3.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
     "express": "^4.17.1",
-    "sendbird-calls": "^0.6.5",
+    "jss": "^10.0.3",
+    "jss-preset-default": "^10.0.3",
+    "sendbird-calls": "^0.6.10",
     "uuid": "^3.3.3"
   }
 }

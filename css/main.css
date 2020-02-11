@@ -1,71 +1,48 @@
-@import 'global.css';
-
-.logo-oval {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: var(--white);
-    background-image: url("../img/ic-logo-inverse-01.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 16px;
+:root {
+    --navy-50: #f6f8fc;
+    --navy-100: #dee2f2;
+    --navy-200: #c9d0e6;
+    --navy-900: #212242;
+    --white: #ffffff;
+    --purple-300: #825eeb;
+    --green-300: #1fcca1;
+    --green-400: #00998c;
+    --red-300: #f24d6b;
+    --red-400: #d92148;
+    --mute-gray: rgba(255, 255, 255, 0.2);
 }
 
-.dial-view {
-    box-sizing: border-box;
-    width: 100vw;
-    max-width: 500px;
-    padding: 24px;
+body {
+    margin: 0 auto;
 }
 
-.login-view {
-    box-sizing: border-box;
-    width: 100vw;
-    max-width: 500px;
-    padding: 24px;
+.center {
+    align-items: center;
+    justify-content: center;
 }
 
-.login-title-div {
-    margin-bottom: 40px;
+.column {
+    display: flex;
+    flex-direction: column;
 }
 
-.login-button {
-    margin-bottom: 23px;
-    margin-left: calc(100% - 80px);
-    margin-right: 0;
+.row {
+    display: flex;
+    flex-direction: row;
 }
 
-.ic-logo-horizontal-purple-300 {
-    display: block;
-    width: 180px;
-    height: 40px;
-    object-fit: contain;
-    margin-bottom: 32px;
+.row-reverse {
+    display:flex;
+    flex-direction: row-reverse;
 }
 
-.form-container {
-    box-sizing: border-box;
-    width: 100%;
+.btn {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     border-radius: 4px;
-    border: solid 1px #dee2f2;
-    background-color: var(--white);
-    padding-left: 48px;
-    padding-right: 48px;
-}
-
-.field {
-    box-sizing: border-box;
-    width: 100%;
-    height: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 16px;
-    border-radius: 4px;
-    border: solid 1px var(--navy-200);
-    background-color: var(--white);
-    margin-left: -1px;
-    margin-bottom: 22px;
-
     font-family: Avenir Next;
     font-size: 14px;
     font-weight: normal;
@@ -73,141 +50,163 @@
     font-style: normal;
     line-height: 1.43;
     letter-spacing: normal;
-    color: var(--navy-900);
+    text-align: center;
+    height: 40px;
 }
 
-hr {
-    width: calc(100% + 96px);
-    height: 1px;
-    border: 0;
-    border-top: 1px solid var(--navy-100);
-    margin-left: -48px;
-    margin-top: 10px;
-    margin-bottom: 23px;
+.btn-primary {
+    background-color: var(--purple-300);
+    color: var(--white);
 }
 
-.logout-button {
+.btn.btn-big {
+    width: 180px;
+    height: 50px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.btn.btn-mid {
+    width: 80px;
+    height: 40px;
     margin-bottom: 23px;
     margin-left: 10px;
 }
 
-.dial-button {
-    margin-bottom: 23px;
-    margin-left: 10px;
+.btn-block {
+    width: 100%;
 }
 
-.remote-profile {
-    display: block;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: contain;
-    margin-bottom: 24px;
-}
-
-.peer-name {
-    margin-bottom: 4px;
-}
-
-.connection-info {
-    margin-bottom: 24px;
-}
-
-.peer-state-div {
-    align-items: center;
-    margin-bottom: 97px;
-}
-
-.peer-state-div-invisible {
-    visibility: hidden;
-    margin-bottom: 97px;
-}
-
-.peer-mute-icon {
-    width: 32px;
+.title {
     height: 32px;
-    background-image: url("../img/ic-callkit-audio-off-white.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 8px;
-}
-
-.peer-mute-label {
-    display: block;
     font-family: Avenir Next;
-    font-size: 12px;
+    font-size: 24px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: normal;
+    line-height: 1.33;
+    letter-spacing: -0.25px;
+    color: inherit;
+}
+
+.input-title {
+    display: inline-block;
+    margin-top: 6px;
+    height: 12px;
+    font-family: Avenir Next;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: var(--navy-900);
+    margin-bottom: 6px;
+}
+
+.input-title:first-of-type {
+    margin-top: 38px;
+}
+
+.desc {
+    font-family: Avenir Next;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: -0.1px;
+    color: inherit;
+}
+
+.desc-light {
+    font-family: Avenir Next;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
     letter-spacing: normal;
     text-align: center;
     color: var(--white);
 }
 
-.btn-accept {
-    margin-left: 32px;
-    margin-right: 32px;
-    margin-bottom: 8px;
-    background-color: var(--green-300);
-    background-image: url("../img/ic-callkit-audio.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+.smile-face {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    width: 40px;
+    height: 40px;
+    font-family: AppleColorEmoji;
+    font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: var(--white);
 }
 
-.btn-call {
-    margin-left: 32px;
-    margin-right: 32px;
-    margin-bottom: 8px;
+.wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
 }
 
-.btn-mute {
-    background-color: var(--mute-gray);
-    background-image: url("../img/ic-callkit-audio-off-white.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
 
-.btn-unmute {
+.backdrop {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+}
+
+.bg-white {
     background-color: var(--white);
-    background-image: url("../img/ic-callkit-audio-off-black.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    color: var(--navy-900);
 }
 
-.btn-end {
-    background-color: var(--red-300);
-    background-image: url("../img/ic-callkit-end.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+.bg-light {
+    background-color: var(--navy-50);
+    color: var(--navy-900);
 }
 
-.btn-decline {
-    background-color: var(--red-300);
-    background-image: url("../img/ic-callkit-decline.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+.bg-dark {
+    background-color: var(--navy-900);
+    color: var(--white);
 }
 
-.btn-close {
-    width: 248px;
-    height: 64px;
-    border: none;
-    border-radius: 4px;
-    margin-bottom: 28px;
-    background: rgba(255, 255, 255, 0.08);
+.bg-white .desc {
+    color: #595e8a;
 }
 
-.btn-close:hover {
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.28);
+.bg-light .desc {
+    color: #595e8a;
+}
+
+.bg-dark .desc {
+    color: var(--white);
+}
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+button label {
+    cursor: inherit;
 }
 
 .ic-logo-horizontal-purple-300 {
     display: block;
     width: 180px;
     height: 40px;
-    object-fit: contain;
+    background: url("../img/ic-logo-horizontal-purple-300.svg");
     margin-bottom: 24px;
 }
 
@@ -240,21 +239,6 @@ hr {
     border-radius: 4px;
 }
 
-.smile-face {
-    margin-top: 32px;
-    margin-bottom: 16px;
-    width: 40px;
-    height: 40px;
-    font-family: AppleColorEmoji;
-    font-size: 40px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    color: var(--white);
-}
-
 .img-tooltip-tail-down {
     position: absolute;
     right: 16px;
@@ -264,67 +248,8 @@ hr {
     object-fit: contain;
 }
 
-.widget-open-icon {
-    cursor: pointer;
+.widget {
     position: absolute;
     right: 16px;
     bottom: 16px;
-    width: 56px;
-    height: 56px;
-    border-radius: 32px;
-    background-color: var(--purple-300);
-    background-image: url("../img/ic-call-logs-filled.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.widget-close-icon {
-    cursor: pointer;
-    position: absolute;
-    right: 16px;
-    bottom: 16px;
-    width: 56px;
-    height: 56px;
-    border-radius: 32px;
-    background-color: var(--purple-300);
-    background-image: url("../img/ic-close-24.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.widget-div {
-    position: absolute;
-    right: 24px;
-    bottom: 88px;
-    width: 376px;
-    height: 592px;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 9px 15px -7px rgba(33, 34, 66, 0.04), 0 9px 46px 8px rgba(33, 34, 66, 0.08), 0 24px 38px 3px rgba(33, 34, 66, 0.12);
-    background-color: var(--white);
-    overflow: hidden;
-}
-
-.widget-div-hidden {
-    display: none;
-}
-
-
-.widget-header {
-    height: 80px;
-    background-color: var(--purple-300);
-}
-
-.ic-logo-purple-300 {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-    margin-top: 28px;
-    margin-left: 24px;
-}
-
-.widget-form-container {
-    box-sizing: border-box;
-    padding-left: 24px;
-    padding-right: 24px;
 }
