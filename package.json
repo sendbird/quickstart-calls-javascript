@@ -34,7 +34,7 @@
     "express": "^4.17.1",
     "jss": "^10.0.3",
     "jss-preset-default": "^10.0.3",
-    "sendbird-calls": "^0.6.10",
+    "sendbird-calls": "^0.7.0",
     "uuid": "^3.3.3"
   }
 }

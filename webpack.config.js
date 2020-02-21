@@ -2,8 +2,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
+const webpack = require("webpack");
 
-module.exports = {
+module.exports = env => ({
   entry: {
     main: ['./js/main.js'],
     widget: ['./js/widget.js'],
@@ -70,6 +71,9 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
+    new webpack.DefinePlugin({
+      BUILD_APP_ID: (env && env.app_id) ? `"${env.app_id}"` : undefined,
+    }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'views/index.html',
@@ -86,4 +90,4 @@ module.exports = {
       chunks: ['widget']
     })
   ]
-};
+});
