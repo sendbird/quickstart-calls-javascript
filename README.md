@@ -1,7 +1,7 @@
 # SendBird Calls—QuickStart Guide for JavaScript
 
 ## Introduction
-SendBird provides `SendBirdCall` framework for your app enabling `VoIP` communication among your users. This sample introduces an applications based on `SendBirdCall`.
+SendBird provides `SendBirdCall` framework for your app enabling real-time `voice and video calls` between your users. This sample introduces an applications based on `SendBirdCall`.
 
 ## Prerequisites
 - Node
@@ -22,14 +22,14 @@ SendBird provides `SendBirdCall` framework for your app enabling `VoIP` communic
 ## Installing and running the sample application
 1\. Clone this repository 
 ```shell script
-$ git clone git@github.com:sendbird/quickstart-calls-js.git
+$ git clone git@github.com:sendbird/quickstart-calls-javascript.git
 ```
 2\. Install dependencies
 ```shell script
-$ cd quickstart-calls-js
+$ cd quickstart-calls-javascript
 $ npm install
 ```
-3\. In `envs.js`, replace the value of `TEST_APP_ID` with your `Application ID`.
+3\. In `envs.js`, replace the value of `TEST_APP_ID` with your `Application ID`. If you skip this step, an additional field for the `Application ID` will appear in the login view.
 ```javascript
 export const TEST_APP_ID = 'YOUR_APP_ID';
 ```
@@ -56,7 +56,6 @@ $ npm run start
 6. If all steps have been followed correctly, an incoming call notification will appear on the `callee` user’s browser.
 7. Reverse roles, and initiate a call from the other browser.
 8. If the `caller` and `callee` devices are near each other, use headphones to prevent audio feedback.
-9. The SendBird Calls JavaScript Sample has been successfully implemented.
 
 ## Reference
 [SendBird Calls JS SDK Readme](https://github.com/sendbird/sendbird-calls-javascript/blob/master/README.md)

@@ -1,5 +1,5 @@
 {
-  "name": "voicevideosample",
+  "name": "calls-quickstart",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -34,7 +34,7 @@
     "express": "^4.17.1",
     "jss": "^10.0.3",
     "jss-preset-default": "^10.0.3",
-    "sendbird-calls": "^0.7.0",
+    "sendbird-calls": "^1.0.0",
     "uuid": "^3.3.3"
   }
 }
