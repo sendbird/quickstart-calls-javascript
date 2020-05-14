@@ -14,6 +14,7 @@
 
 body {
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .center {
@@ -150,6 +151,7 @@ body {
     display: flex;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 .container {
@@ -253,3 +255,17 @@ button label {
     right: 16px;
     bottom: 16px;
 }
+
+::-webkit-scrollbar {
+    width: 5px;  /* 세로축 스크롤바 길이 */    
+  }
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: gray;
+  }
