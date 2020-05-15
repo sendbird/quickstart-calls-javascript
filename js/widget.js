@@ -2,6 +2,7 @@ import "../css/main.css";
 import LoginView from "../lib/views/LoginView";
 import CallView from "../lib/views/CallView";
 import DialView from "../lib/views/DialView";
+import CallLogView from "../lib/views/CallLogView";
 import { TEST_APP_ID, USER_ID, ACCESS_TOKEN, IS_ACCESS_TOKEN_NEEDED } from "../envs.js";
 import WidgetApp from "../lib/components/WidgetApp";
 
@@ -13,7 +14,8 @@ function onLoadedHandler() {
       'index': LoginView,
       'login_view': LoginView,
       'dial_view': DialView,
-      'call_view': CallView
+      'call_view': CallView,
+      'calllog_view': CallLogView
     },
     styles: {
     },
