@@ -11,20 +11,40 @@
 <body>
     <div id="container" class="wrapper center bg-white">
         <div id="welcome_view" class="column center">
-            <img src="<%=require('../img/ic-logo-horizontal-purple-300.svg')%>" alt="Sendbird horizontal logo svg icon" class="ic-logo-horizontal-purple-300">
+            <img src="<%=require('../img/ic-logo-horizontal.svg')%>" alt="Sendbird horizontal logo svg icon" class="ic-logo-horizontal">
             <div class="title voice-sample-page">
-                Calls Sample
+              Sendbird Calls Quickstart
             </div>
-            <div class="desc voice-sample-desc">
-                Choose Sample Type
+            <div class="choose-a-type">
+              Choose a type
             </div>
-            <div class="row center">
-                <a class="btn btn-primary btn-big" href="main.html">
+            <div class="row center margin-top-24">
+                <div class="choose-background margin-right-24" onclick="location.href='main.html'">
+                  <div class="choose-title">
+                    Full-screen
+                  </div>
+                  <div class="choose-desc">
+                    Make a call using a full-screen type. Lorem ipsum dolor sit amet, di os consectetur.
+                  </div>
+                </div>
+
+                <div class="choose-background" onclick="location.href='widget.html'">
+                  <div class="choose-title">
+                    Widget
+                  </div>
+                  <div class="choose-desc">
+                    Make a call using a widget type. Lorem ipsum dolor sit amet, di os consectetur.
+                  </div>
+                </div>
+                
+                
+                <!-- <a class="btn btn-primary btn-big" href="main.html">
                     <label>Full-Screen Sample</label>
                 </a>
                 <a class="btn btn-primary btn-big" href="widget.html">
                     <label>Widget Sample</label>
-                </a>
+                </a> -->
+               
             </div>
         </div>
     </div>
