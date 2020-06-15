@@ -107,11 +107,11 @@ body {
   cursor: pointer;
 }
 
-.choose-background:hover {
+.choice-item:hover {
   border: solid 1px var(--purple-300);
 }
 
-.choose-title {
+.title-choice-item {
   margin: 24px 24px 8px 24px;
   width: 88px;
   height: 24px;
@@ -121,7 +121,7 @@ body {
   color: var(--navy-900);
 }
 
-.choose-desc {
+.desc-choice-item {
   width: 212px;
   height: 60px;
   margin-left: 24px;
@@ -164,33 +164,6 @@ body {
   letter-spacing: -0.1px;
   color: #595e8a;
   margin-bottom: 24px;
-}
-
-.desc-quick {
-  width: 275px;
-  height: 32px;
-  font-family: Avenir Next;
-  font-size: 24px;
-  font-weight: 600;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.33;
-  letter-spacing: -0.25px;
-  color: var(--navy-900);
-}
-
-.choose-a-type {
-  width: 92px;
-  height: 20px;
-  font-family: Avenir Next;
-  font-size: 14px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.43;
-  letter-spacing: -0.1px;
-  color: #595e8a;
 }
 
 .smile-face {
