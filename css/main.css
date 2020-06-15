@@ -127,7 +127,7 @@ body {
     height: 60px;
     margin-left: 24px;
     letter-spacing: -0.1px;
-    color: #595e8a;
+    color: var(--navy-900);
 }
 
 
@@ -271,7 +271,7 @@ button label {
     height: 108px;
     border-radius: 4px;
     box-shadow: 0 3px 5px -3px rgba(33, 34, 66, 0.04), 0 3px 14px 2px rgba(33, 34, 66, 0.08), 0 8px 10px 1px rgba(33, 34, 66, 0.12);
-    border: solid 1px #c9d0e6;
+    border: solid 1px var(--navy-200);
 }
 
 .img-tooltip-tail-down {
