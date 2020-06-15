@@ -10,32 +10,30 @@
 
   <body>
     <div id="container" class="wrapper center bg-white">
-        <div id="welcome_view" class="column center">
-            <img src="<%=require('../img/ic-logo-horizontal.svg')%>" alt="Sendbird horizontal logo svg icon" class="ic-logo-horizontal">
-            <div class="title voice-sample-page demi">
-              Sendbird Calls Quickstart
+      <div id="welcome_view" class="column center">
+        <img src="<%=require('../img/ic-logo-horizontal.svg')%>" alt="Sendbird horizontal logo svg icon" class="ic-logo-horizontal">
+        <div class="voice-sample-page title font-weight-demi">
+          Sendbird Calls Quickstart
+        </div>
+        <div class="title-choice-type">
+          Choose a type
+        </div>
+        <div class="row center margin-top-24">
+          <div class="choice-item margin-right-24" onclick="location.href='main.html'">
+            <div class="title-choice-item">
+              Full-screen
             </div>
-            <div class="choose-a-type">
-              Choose a type
+            <div class="desc-choice-item">
+              Make a call using a full-screen type.
             </div>
-            <div class="row center margin-top-24">
-                <div class="choose-background margin-right-24" onclick="location.href='main.html'">
-                  <div class="choose-title">
-                    Full-screen
-                  </div>
-                  <div class="choose-desc">
-                    Make a call using a full-screen type.
-                  </div>
-                </div>
+          </div>
 
-                <div class="choose-background" onclick="location.href='widget.html'">
-                  <div class="choose-title">
-                    Widget
-                  </div>
-                  <div class="choose-desc">
-                    Make a call using a widget type.
-                  </div>
-                </div>
+          <div class="choice-item" onclick="location.href='widget.html'">
+            <div class="title-choice-item">
+              Widget
+            </div>
+            <div class="desc-choice-item">
+              Make a call using a widget type.
             </div>
           </div>
         </div>

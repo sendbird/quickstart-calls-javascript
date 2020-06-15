@@ -15,6 +15,13 @@
 body {
   margin: 0 auto;
   overflow: hidden;
+  font-family: Avenir Next;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
 }
 
 .center {
@@ -56,13 +63,6 @@ body {
   justify-content: center;
   text-decoration: none;
   border-radius: 4px;
-  font-family: Avenir Next;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.43;
-  letter-spacing: normal;
   text-align: center;
   height: 40px;
 }
@@ -90,7 +90,14 @@ body {
   width: 100%;
 }
 
-.choose-background {
+.title-choice-type {
+  width: 92px;
+  height: 20px;
+  letter-spacing: -0.1px;
+  color: var(--navy-600);
+}
+
+.choice-item {
   display: inline-block;
   width: 260px;
   height: 158px;
@@ -109,9 +116,6 @@ body {
   width: 88px;
   height: 24px;
   font-size: 18px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.33;
   letter-spacing: -0.25px;
   color: var(--navy-900);
@@ -128,11 +132,7 @@ body {
 
 .title {
   height: 32px;
-  font-family: Avenir Next;
   font-size: 24px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.33;
   letter-spacing: -0.25px;
   color: inherit;
@@ -142,13 +142,8 @@ body {
   display: inline-block;
   margin-top: 6px;
   height: 12px;
-  font-family: Avenir Next;
   font-size: 12px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1;
-  letter-spacing: normal;
   color: var(--navy-900);
   margin-bottom: 6px;
 }
@@ -158,12 +153,6 @@ body {
 }
 
 .desc {
-  font-family: Avenir Next;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.43;
   letter-spacing: -0.1px;
   color: #595e8a;
 }
@@ -171,13 +160,6 @@ body {
 .desc-light {
   width: 100%;
   height: 20px;
-  font-family: Avenir Next;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.43;
-  letter-spacing: normal;
   text-align: center;
   letter-spacing: -0.1px;
   color: #595e8a;
@@ -218,11 +200,7 @@ body {
   height: 40px;
   font-family: AppleColorEmoji;
   font-size: 40px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1;
-  letter-spacing: normal;
   color: var(--white);
 }
 
@@ -281,14 +259,6 @@ body {
 
 button label {
   cursor: inherit;
-}
-
-.ic-logo-horizontal-purple-300 {
-  display: block;
-  width: 180px;
-  height: 40px;
-  background: url("../img/ic-logo-horizontal-purple-300.svg");
-  margin-bottom: 24px;
 }
 
 .ic-logo-horizontal {
