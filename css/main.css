@@ -216,7 +216,7 @@ body {
 }
 
 .bg-light .desc {
-    color: #595e8a;
+    color: var(--navy-600);
 }
 
 .bg-dark .desc {
