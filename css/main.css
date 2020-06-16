@@ -92,7 +92,7 @@ body {
 }
 
 .title-choice-type {
-    width: 92px;
+    width: 174px;
     height: 20px;
     letter-spacing: -0.1px;
     color: var(--navy-600);
@@ -127,7 +127,7 @@ body {
     height: 60px;
     margin-left: 24px;
     letter-spacing: -0.1px;
-    color: var(--navy-900);
+    color: var(--navy-600);
 }
 
 
