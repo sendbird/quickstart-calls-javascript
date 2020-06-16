@@ -155,7 +155,7 @@ body {
 
 .desc {
     letter-spacing: -0.1px;
-    color: #595e8a;
+    color: var(--navy-600);
 }
 
 .desc-light {
@@ -163,7 +163,7 @@ body {
     height: 20px;
     text-align: center;
     letter-spacing: -0.1px;
-    color: #595e8a;
+    color: var(--navy-600);
     margin-bottom: 24px;
 }
 
@@ -212,7 +212,7 @@ body {
 }
 
 .bg-white .desc {
-    color: #595e8a;
+    color: var(--navy-600);
 }
 
 .bg-light .desc {
