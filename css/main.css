@@ -23,6 +23,8 @@ body {
   font-style: normal;
   line-height: 1.43;
   letter-spacing: normal;
+  --webkit-font-smooth: none;
+  -moz-osx-font-smoothing: none;
 }
 
 .center {
@@ -117,6 +119,7 @@ body {
   width: 88px;
   height: 24px;
   font-size: 18px;
+  font-weight: 500;
   line-height: 1.33;
   letter-spacing: -0.25px;
   color: var(--navy-900);
