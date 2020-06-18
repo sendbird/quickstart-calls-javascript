@@ -34,6 +34,9 @@ body {
   line-height: 1.43;
   color: var(--navy-900);
   letter-spacing: normal;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 .center {
