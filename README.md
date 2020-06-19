@@ -3,6 +3,8 @@
 ## Introduction
 SendBird provides `SendBirdCall` framework for your app enabling real-time `voice and video calls` between your users. This sample introduces an applications based on `SendBirdCall`.
 
+> If you need any helps or have any issue / question, please visit [our community](https://community.sendbird.com) 
+
 ## Prerequisites
 - Node
 - npm (or yarn)
