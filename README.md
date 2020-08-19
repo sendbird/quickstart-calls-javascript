@@ -90,6 +90,26 @@ $ npm run start
 
 <br />
 
+##Sound Effects
+You can use different sound effects to enhance the user experience for events that take place while using Sendbird Calls. 
+
+To add sound effects, use the `SendBirdCall.addDirectCallSound(type: SoundType, uri: string)` method for the following events: dialing, ringing, reconnecting, and reconnected. Remember to set sound effects before the mentioned events occur. To remove sound effects, use the `SendBirdCall.Options.removeDirectCallSound(type: SoundType)` method.
+
+Use `SendBirdCall.addDirectCallSound(type: SoundType, uri: string)` method to set sound effects for a number of types: dialing, ringing, reconnecting, reconnected. Sound effects must be set before the events occur. To unregister a sound effect, remove it by calling `SendBirdCall.Options.removeDirectCallSound(type: SoundType)`.
+
+```javascript
+// Play on a caller’s side when making a call.
+SendBirdCall.addDirectCallSound(SendBirdCall.SoundType.DIALING, DIALING_SOUND_URL);
+// Play on a callee’s side when receiving a call.
+SendBirdCall.addDirectCallSound(SendBirdCall.SoundType.RINGING, RINGING_SOUND_URL);
+// Play when a connection is lost, but the SDK immediately attempts to reconnect.
+SendBirdCall.addDirectCallSound(SendBirdCall.SoundType.RECONNECTING, RECONNECTING_SOUND_URL);
+// Play when the connection is re-established.
+SendBirdCall.addDirectCallSound(SendBirdCall.SoundType.RECONNECTED, RECONNECTED_SOUND_URL);
+```
+For more information about sound effects, see the [SDK for JavaScript README for Sound effects](https://github.com/sendbird/sendbird-calls-javascript#sound-effect)
+
+
 ## Reference
 
 For further detail on Sendbird Calls for JavaScript, refer to [Sendbird Calls SDK for JavaScript README](https://github.com/sendbird/sendbird-calls-javascript/blob/master/README.md).
