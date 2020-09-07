@@ -92,4 +92,4 @@ $ npm run start
 
 ## Reference
 
-For further detail on Sendbird Calls for JavaScript, refer to [Sendbird Calls SDK for JavaScript README](https://github.com/sendbird/sendbird-calls-javascript/blob/master/README.md)
+For further detail on Sendbird Calls for JavaScript, refer to [Sendbird Calls SDK for JavaScript README](https://github.com/sendbird/sendbird-calls-javascript/blob/master/README.md).
