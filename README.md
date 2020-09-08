@@ -1,45 +1,69 @@
-# SendBird Calls—QuickStart Guide for JavaScript
+# Sendbird Calls for JavaScript Quickstart
+
+![Platform](https://img.shields.io/badge/platform-JAVASCRIPT-orange.svg)
+![Languages](https://img.shields.io/badge/language-JAVASCRIPT-orange.svg)
 
 ## Introduction
-SendBird provides `SendBirdCall` framework for your app enabling real-time `voice and video calls` between your users. This sample introduces an applications based on `SendBirdCall`.
 
-> If you need any helps or have any issue / question, please visit [our community](https://community.sendbird.com) 
+Sendbird Calls SDK for JavaScript is used to initialize, configure, and build voice and video calling functionality into your JavaScript client app. In this repository, you will find the steps you need to take before implementing the Calls SDK into a project, and a sample app which contains the code for implementing voice and video call. 
 
-## Prerequisites
+### More about Sendbird Calls for Javascript
+
+Find out more about Sendbird Calls for JavaScript on [Calls for JavaScript doc](https://docs.sendbird.com/javascript/calls_quick_start). If you need any help in resolving any issues or have questions, visit [our community](https://community.sendbird.com).
+
+<br />
+
+## Before getting started
+
+This section shows you the prerequisites you need for testing Sendbird Calls for Javascript sample app.
+
+### Requirements
+
+The minimum requirements for Calls SDK for Javascript sample are: 
+
 - Node
 - npm (or yarn)
 - Modern browser, supporting WebRTC APIs.
 
-## Creating a SendBird application
-1. Login or Sign-up for an account at [dashboard](https://dashboard.sendbird.com/).
-2. Create or select an application on the SendBird Dashboard.
-3. Note the `Application ID` for future reference.
-4. [Contact sales](https://sendbird.com/contact-sales) to get the `Calls` menu enabled in the dashboard. (Self-serve coming soon.)
+<br />
 
-## Creating test users
-1. In the SendBird dashboard, navigate to the `Users` menu.
-2. Create at least two new users, one that will be the `caller`, and one that will be the `callee`.
-3. Note the `User ID` of each user for future reference.
+## Getting started
 
-## Installing and running the sample application
-1\. Clone this repository 
-```shell script
+If you would like to try the sample app specifically fit to your usage, you can do so by following the steps below. 
+
+### Create a Sendbird application
+
+1. Login or Sign-up for an account on [Sendbird Dashboard](https://dashboard.sendbird.com).
+2. Create or select an application on the dashboard.
+3. Note your Sendbird application ID for future reference.
+4. [Contact sales](https://get.sendbird.com/talk-to-sales.html) to get the **Calls** menu enabled on your dashboard. A **self-serve** will be available soon to help you purchase call credits automatically from your dashboard.  
+
+### Create test users
+
+1. On the Sendbird dashboard, navigate to the **Users** menu.
+2. Create at least two new users: one as a `caller`, and the other as a `callee`.
+3. Note the `user_id` of each user for future reference.
+
+### Install and run the sample app
+
+1. Clone this repository 
+```bash
 $ git clone git@github.com:sendbird/quickstart-calls-javascript.git
 ```
-2\. Install dependencies
-```shell script
+2. Install dependencies
+```bash
 $ cd quickstart-calls-javascript
 $ npm install
 ```
-3\. In `envs.js`, replace the value of `TEST_APP_ID` with your `Application ID`. If you skip this step, an additional field for the `Application ID` will appear in the login view.
+3. In `envs.js`, replace the value of `TEST_APP_ID` with `APP_ID` which you can find on your Sendbird application information. If you skip this step, an additional field for the **Application ID** will appear in the login view.
 ```javascript
-export const TEST_APP_ID = 'YOUR_APP_ID';
+export const TEST_APP_ID = 'SAMPLE_APP_ID';
 ```
-4\. Build
+4. Build
 ```shell script
 $ npm run build
 ```
-5\. Start sample app
+5. Start the sample app
 ```shell script
 # Start with webpack-dev-sever
 $ npm run start:dev
@@ -47,17 +71,25 @@ $ npm run start:dev
 # Start with express server
 $ npm run start
 ```
-6\. If two devices are available, repeat these steps to install the sample application on both the primary device and the secondary device.
+6. If two devices are available, repeat these steps to install the sample app on each device.
 
-## Making calls
-1. On each devices, open browser and go to sample page. The default url is `localhost:9000`
-2. On each browsers, choose any sample type to use (full-screen sample or widget sample).
-3. On primary browser, log in to the sample application with the ID of the user designated as the `caller`.
-4. On secondary browser, log in to the sample application with the ID of the user designated as the `callee`.
-5. On primary browser, specify the user ID of the `callee` and initiate a call.
-6. If all steps have been followed correctly, an incoming call notification will appear on the `callee` user’s browser.
-7. Reverse roles, and initiate a call from the other browser.
-8. If the `caller` and `callee` devices are near each other, use headphones to prevent audio feedback.
+<br />
+
+## Making your first call
+
+### How to make a call
+
+1. On each device, open a browser and go to the index page of the sample web app. The default URL is `localhost:9000`.
+2. On each browser, choose an app type between **Full-screen** or **Widget**.
+3. On the primary device’s browser, log in to the sample app with the user ID set as the `caller`.
+4. On the secondary device’s browser, log in to the sample app with the user ID set as the `caller`.
+5. On the primary browser, specify the user ID of the `callee` and initiate a call.
+6. If all steps are followed correctly, an incoming call notification will appear on the browser of the `callee`.
+7. Reverse the roles. Initiate a call from the other browser.
+8. If the two testing devices are near each other, use headphones to make a call to prevent audio feedback.
+
+<br />
 
 ## Reference
-[SendBird Calls JS SDK Readme](https://github.com/sendbird/sendbird-calls-javascript/blob/master/README.md)
+
+For further detail on Sendbird Calls for JavaScript, refer to [Sendbird Calls SDK for JavaScript README](https://github.com/sendbird/sendbird-calls-javascript/blob/master/README.md).
