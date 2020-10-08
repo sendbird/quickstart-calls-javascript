@@ -7,6 +7,15 @@ import CallLogView from "../lib/views/CallLogView";
 import { ACCESS_TOKEN, IS_ACCESS_TOKEN_NEEDED, TEST_APP_ID, USER_ID } from "../envs";
 
 function onLoadedHandler() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const query = urlParams.get('q');
+  let args = {};
+  if (query) {
+    try {
+      args = JSON.parse(atob(query));
+    } catch(e) {}
+  }
+
   const app = new MainApp({
     id: 'main_app',
     pages: {
@@ -18,9 +27,9 @@ function onLoadedHandler() {
     },
     styles: {},
     args: {
-      appId: TEST_APP_ID,
-      userId: USER_ID,
-      accessToken: ACCESS_TOKEN,
+      appId: args.app_id || TEST_APP_ID,
+      userId: args.user_id || USER_ID,
+      accessToken: args.access_token || ACCESS_TOKEN,
       isAccessTokenNeeded: IS_ACCESS_TOKEN_NEEDED,
     }
   });
