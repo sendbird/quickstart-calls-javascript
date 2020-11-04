@@ -90,7 +90,7 @@ $ npm run start
 
 <br />
 
-##Sound Effects
+## Sound Effects
 You can use different sound effects to enhance the user experience for events that take place while using Sendbird Calls. 
 
 To add sound effects, use the `SendBirdCall.addDirectCallSound(type: SoundType, uri: string)` method for the following events: dialing, ringing, reconnecting, and reconnected. Remember to set sound effects before the mentioned events occur. To remove sound effects, use the `SendBirdCall.Options.removeDirectCallSound(type: SoundType)` method.
