@@ -9,7 +9,7 @@ Sendbird Calls SDK for JavaScript is used to initialize, configure, and build vo
 
 ### More about Sendbird Calls for Javascript
 
-Find out more about Sendbird Calls for JavaScript on [Calls for JavaScript doc](https://docs.sendbird.com/javascript/calls_quick_start). If you need any help in resolving any issues or have questions, visit [our community](https://community.sendbird.com).
+Find out more about Sendbird Calls for JavaScript on [Calls for JavaScript doc](https://sendbird.com/docs/calls/v1/javascript/getting-started/about-calls-sdk). If you need any help in resolving any issues or have questions, visit [our community](https://community.sendbird.com).
 
 <br />
 
