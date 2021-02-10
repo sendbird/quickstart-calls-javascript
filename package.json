@@ -1,6 +1,6 @@
 {
   "name": "calls-quickstart",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "",
   "main": "app.js",
   "scripts": {
@@ -34,7 +34,7 @@
     "express": "^4.17.1",
     "jss": "^10.0.3",
     "jss-preset-default": "^10.0.3",
-    "sendbird-calls": "^1.4.1",
+    "sendbird-calls": "^1.5.3",
     "uuid": "^3.3.3"
   }
 }
