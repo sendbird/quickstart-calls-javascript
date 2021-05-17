@@ -1,3 +1,6 @@
+This vanilla JS version of quickstart is OUTDATED. Please check out the [react version of quickstart](https://github.com/sendbird/quickstart-calls-reactjs) instaed.
+==============================================================================
+
 # Sendbird Calls for JavaScript Quickstart
 
 ![Platform](https://img.shields.io/badge/platform-JAVASCRIPT-orange.svg)
